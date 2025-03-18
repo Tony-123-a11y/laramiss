@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import ProductContext from '../context/ProductContext'
 import SmallHead from './SmallHead'
 import Heading from './Heading'
-import FilterCategoryList from './filterCategoryList'
+import FilterCategoryList from './FilterCategoryList'
 import Card from './Card'
 import { memo } from 'react'
 
