@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+.row{
+    display: flex;
+    align-items: center;
+}
+
+@theme {
+    --font-display: "Satoshi", "sans-serif";
+    --color-primary:#1c1b19;
+    --color-hover:#fcd462;
+    --color-secondary:#353530;
+    --color-primaryFont:#a3a3a3;
+    --color-border:#454541;
+    --font-secondaryHead:'Archivo';
+    --font-primaryHead:'Oswald';
+    --font-productTitle:'poppins';
+    --text-xsm:12px;
+    --inset-shadow-lg: inset 40px 0px 90px 60px #1c1b19;
+    --shadow-button:0px 1px 20px 1px rgba(252,212,89,0.5);
+    --shadow-logo: inset 0px 0px 5px 20px rgba(252,212,89,1);
+    --breakpoint-xsm:460px;
+    --breakpoint-xl:1200px;
+    --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+    --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+   
+  }
+  .no-select{
+    user-select: none; /* Prevents text selection */
+  }
+  .preview::-webkit-scrollbar{
+    display: none;
+
+  }
+  .play::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    animation: grow 1s linear infinite;
+  }
+  .play::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    animation: grow  1.8s  linear  infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+  }
+
+  @keyframes grow {
+  to{
+    scale: 1.5;
+    opacity: 0;
+  }
+  }
