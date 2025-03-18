@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import SmallHead from './SmallHead'
 import Heading from './Heading'
-import ProductCarousel from './productCarousel'
+import ProductCarousel from './ProductCarousel'
 import ProductContext from '../context/ProductContext'
 
 const BestSell = () => {
